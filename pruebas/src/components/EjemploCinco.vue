@@ -1,5 +1,8 @@
 <template>
-  
+   <p>EJEMPLO 5</p>
+      <pre>
+      {{ ejemplo5 }}
+    </pre>
 </template>
 <script setup>
 // # Agrega lógica del componente EjemploUno aquí
@@ -28,7 +31,11 @@ const arrayFrutas2 = [
   },
 ];
 
-const ejemplo5 = ``;
+const ejemplo5 = `
+  <!-- Imported Components -->
+  <Objetos />
+  <VforVif />
+`;
 </script>
 <style scoped>
 /* # Estilos específicos para el componente EjemploUno */

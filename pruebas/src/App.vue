@@ -15,39 +15,23 @@
   
   <!-- Example 3 -->
   <EjemploTres/>
- 
-
+  
+  
   <!-- Example 4 -->
-  <div>
-    <p>EJEMPLO 4</p>
-    <pre>
-      {{ ejemplo4 }}
-    </pre>
+  <EjemploCuatro/>
+  
+  
+  
+  <!-- v-for -->
 
-    <!-- v-for -->
-    <div>
-      <ul>
-        <li v-for="(fruta, index) in arrayFrutas" :key="index">
-          {{ fruta }}
-        </li>
-      </ul>
-
-      <ul>
-        <li v-for="fruta in arrayFrutas2" :key="fruta.name">
-          {{ fruta.name }} - {{ fruta.price }} - {{ fruta.description }}
-        </li>
-      </ul>
-    </div>
-  </div>
+  
   <!-- Agregar un salto de línea -->
   <br>
-
+  
   <!-- Example 5 -->
+  <EjemploCinco/>
   <div>
-    <p>EJEMPLO 5</p>
-    <pre>
-      {{ ejemplo5 }}
-    </pre>
+   
 
     <!-- Imported Components -->
     <Objetos />
@@ -61,6 +45,8 @@ import VforVif from './components/VforVif.vue'
 import EjemploUno from './components/EjemploUno.vue'
 import EjemploDos from './components/EjemploDos.vue'
 import EjemploTres from './components/EjemploTres.vue'
+import EjemploCuatro from './components/EjemploCuatro.vue'
+import EjemploCinco from './components/EjemploCinco.vue'
 
 const name = 'Vue 3';
 const styleColor = "color: red;";
@@ -89,25 +75,8 @@ const arrayFrutas2 = [
 
 
 
-const ejemplo4 = `
-  <ul>
-    <li v-for="(fruta, index) in arrayFrutas" :key="index">
-      {{ fruta }}
-    </li>
-  </ul>
 
-  <ul>
-    <li v-for="fruta in arrayFrutas2" :key="fruta.name">
-      {{ fruta.name }} - {{ fruta.price }} - {{ fruta.description }}
-    </li>
-  </ul>
-`;
 
-const ejemplo5 = `
-  <!-- Imported Components -->
-  <Objetos />
-  <VforVif />
-`;
 </script>
 
 <style scoped></style>

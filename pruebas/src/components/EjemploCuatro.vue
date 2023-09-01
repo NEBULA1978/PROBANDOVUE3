@@ -1,5 +1,8 @@
 <template>
-  
+      <p>EJEMPLO 4</p>
+      <pre>
+      {{ ejemplo4 }}
+    </pre>
 </template>
 <script setup>
 // # Agrega lógica del componente EjemploUno aquí
@@ -28,7 +31,20 @@ const arrayFrutas2 = [
   },
 ];
 
-const ejemplo4 = ``;
+const ejemplo4 = `
+  <ul>
+    <li v-for="(fruta, index) in arrayFrutas" :key="index">
+      {{ fruta }}
+    </li>
+  </ul>
+
+  <ul>
+    <li v-for="fruta in arrayFrutas2" :key="fruta.name">
+      {{ fruta.name }} - {{ fruta.price }} - {{ fruta.description }}
+    </li>
+  </ul>
+`;
+
 </script>
 <style scoped>
 /* # Estilos específicos para el componente EjemploUno */
