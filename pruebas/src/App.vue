@@ -46,8 +46,10 @@
     <h2>Practica Computed</h2>
     <Computed />
     
-    <h2>Practica botones con css</h2>
+    <h2>Practica botones 3</h2>
     <Practica2 />
+    <h2>Practica botones con css bootstrap</h2>
+    <Bootstrap />
   </div>
 </template>
 
@@ -66,6 +68,7 @@ import ReactivasRef from './components/ReactivasRef.vue'
 import Practica from './components/Practica.vue'
 import Computed from './components/Computed.vue'
 import Practica2 from './components/Practica2.vue'
+import Bootstrap from './components/Bootstrap.vue'
 
 // const name = 'Vue 3';
 // const styleColor = "color: red;";
