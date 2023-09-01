@@ -1,5 +1,15 @@
 <template>
-  
+   <div>
+      <p>EJEMPLO 3</p>
+      <pre>
+      {{ ejemplo3 }}
+    </pre>
+
+      <!-- v-show -->
+      <h2 v-show="active">Estoy en true</h2>
+    </div>
+    <!-- Agregar un salto de línea -->
+    <br>
 </template>
 <script setup>
 // # Agrega lógica del componente EjemploUno aquí
@@ -28,7 +38,10 @@ const arrayFrutas2 = [
   },
 ];
 
-const ejemplo3 = ``;
+
+const ejemplo3 = `
+  <h2 v-show="active">Estoy en true</h2>
+`;
 </script>
 <style scoped>
 /* # Estilos específicos para el componente EjemploUno */
