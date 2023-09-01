@@ -20,13 +20,25 @@ const arrayFrutas = [
     stock: 20,
   },
 ];
+
+
+// Código del Ejemplo 1
+const ejemplo1 = ` <ul>
+    <template v-for="fruta in arrayFrutas" :key="fruta.name">
+      <li v-if="fruta.stock > 0">
+        {{ fruta }}
+      </li>
+    </template>
+  </ul>`
 </script>
 
 <template>
   <h1>Hola {{ name }}!</h1>
 
   <p>Ejemplo1</p>
-
+    <pre>
+    {{ ejemplo1 }}
+  </pre>
   <ul>
     <template v-for="fruta in arrayFrutas" :key="fruta.name">
       <li v-if="fruta.stock > 0">
