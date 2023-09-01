@@ -52,3 +52,20 @@ const classCounter = computed(() => {
     color: black;
 }
 </style>
+
+<!-- TIP
+
+En lugar de una propiedad calculada, podemos definir la misma función como un método. Para el resultado final, los dos enfoques son exactamente iguales. Sin embargo, la diferencia es que las propiedades calculadas se almacenan en caché en función de sus dependencias reactivas.
+Una propiedad calculada solo se volverá a evaluar cuando algunas de sus dependencias reactivas hayan cambiado. -->
+
+<!-- // método -->
+<!-- const classCounter = () => {
+    if (counter.value === 0) {
+        return "zero";
+    }
+    return counter.value > 0 ? "positive" : "negative";
+}; -->
+
+<!-- <h2 :class="classCounter()">
+    {{ counter }}
+</h2> -->
