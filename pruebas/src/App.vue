@@ -25,10 +25,22 @@
 
   <!-- Example 5 -->
   <EjemploCinco />
+
+  
+  
   <div>
     <!-- Imported Components -->
     <Objetos />
     <VforVif />
+    
+    
+    <Von />
+    <Vonparametros />
+    <Reactivas />
+    <br>
+    <h2>Tiene reactividad con ref</h2>
+    <ReactivasRef />
+
   </div>
 </template>
 
@@ -40,6 +52,10 @@ import EjemploDos from './components/EjemploDos.vue'
 import EjemploTres from './components/EjemploTres.vue'
 import EjemploCuatro from './components/EjemploCuatro.vue'
 import EjemploCinco from './components/EjemploCinco.vue'
+import Von from './components/Von.vue'
+import Vonparametros from './components/Vonparametros.vue'
+import Reactivas from './components/Reactivas.vue'
+import ReactivasRef from './components/ReactivasRef.vue'
 
 // const name = 'Vue 3';
 // const styleColor = "color: red;";
