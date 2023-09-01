@@ -7,22 +7,13 @@
 
   <!-- Example 1 -->
   <EjemploUno/>
-
+  
+  <!-- Example 1 -->
+  <EjemploDos/>
   <!-- Agregar un salto de línea -->
   <br>
 
-  <!-- Example 2 -->
-  <div>
-    <p>EJEMPLO 2</p>
-    <pre>
-      {{ ejemplo2 }}
-    </pre>
-
-    <h2>Hola {{ name }}!</h2>
-    <h2 v-if="active">v-if en acción</h2>
-  </div>
-  <!-- Agregar un salto de línea -->
-  <br>
+  
 
   <!-- Example 3 -->
   <div>
@@ -79,6 +70,7 @@
 import Objetos from './components/Objetos.vue'
 import VforVif from './components/VforVif.vue'
 import EjemploUno from './components/EjemploUno.vue'
+import EjemploDos from './components/EjemploDos.vue'
 
 const name = 'Vue 3';
 const styleColor = "color: red;";
@@ -105,10 +97,6 @@ const arrayFrutas2 = [
   },
 ];
 
-const ejemplo2 = `
-  <h2>Hola {{ name }}!</h2>
-  <h2 v-if="active">v-if en acción</h2>
-`;
 
 const ejemplo3 = `
   <h2 v-show="active">Estoy en true</h2>
