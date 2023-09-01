@@ -40,6 +40,11 @@
     <br>
     <h2>Tiene reactividad con ref</h2>
     <ReactivasRef />
+    <br>
+    <h2>Practica botones</h2>
+    <Practica />
+    <h2>Practica Computed</h2>
+    <Computed />
 
   </div>
 </template>
@@ -56,6 +61,8 @@ import Von from './components/Von.vue'
 import Vonparametros from './components/Vonparametros.vue'
 import Reactivas from './components/Reactivas.vue'
 import ReactivasRef from './components/ReactivasRef.vue'
+import Practica from './components/Practica.vue'
+import Computed from './components/Computed.vue'
 
 // const name = 'Vue 3';
 // const styleColor = "color: red;";
