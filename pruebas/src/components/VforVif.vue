@@ -46,9 +46,10 @@ const ejemplo2 = `<p>Ejemplo2</p>
 </script>
 
 <template>
-    <h1>Hola {{ name }}!</h1>
+    <br>
+    <h1>COMPONENTE VforIf.vue</h1>
 
-    <p>Ejemplo1</p>
+    <p>Ejemplo1 de componente VforVif.vue</p>
     <pre>
     {{ ejemplo1 }}
   </pre>

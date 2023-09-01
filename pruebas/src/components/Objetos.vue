@@ -57,6 +57,13 @@ const arrayFrutas3 = [
     stock: 20,
   },
 ];
+
+// Código del Ejemplo 1
+const ejemplo1 = `<ul>
+    <li v-for="(fruta, index) in arrayFrutas" :key="index">
+      {{ fruta }}
+    </li>
+  </ul> `
 </script>
 
 <template>
@@ -64,8 +71,12 @@ const arrayFrutas3 = [
     <img alt="Vue logo" class="logo" src="../assets/logo.svg" width="125" height="125" />
 
   </header>
-
-
+  <br>
+  <h1>COMPONENTE Objetos.vue</h1>
+  <p>Ejemplo1 </p>
+  <pre>
+    {{ ejemplo1 }}
+  </pre>
   <!-- Objetos: -->
   <ul>
     <li v-for="(fruta, index) in arrayFrutas" :key="index">

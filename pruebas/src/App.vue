@@ -2,7 +2,8 @@
   <header>
     <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
   </header>
-  <h1>Hola VUE 3 h1</h1>
+  <h1>ARCHIVO PRINCIPAL</h1>
+  <br>
 
   <!-- Example 1 -->
   <div>
@@ -10,7 +11,7 @@
     <pre>
       {{ ejemplo1 }}
     </pre>
-
+    
     <h2>Hola {{ name }}! de javascript</h2>
     <h2 v-bind:style="styleColor">Hola {{ name }}</h2>
     <h2 :style="styleColor2">Hola {{ name }}</h2>
