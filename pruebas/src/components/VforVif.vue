@@ -1,6 +1,4 @@
 <script setup>
-// import HelloWorld from './components/HelloWorld.vue'
-
 const name = "Vue 3";
 const arrayFrutas = [
     {
@@ -22,36 +20,58 @@ const arrayFrutas = [
         stock: 20,
     },
 ];
+
+
+// Código del Ejemplo 1
+const ejemplo1 = ` <ul>
+    <template v-for="fruta in arrayFrutas" :key="fruta.name">
+      <li v-if="fruta.stock > 0">
+        {{ fruta }}
+      </li>
+    </template>
+  </ul>`
+// Código del Ejemplo 2
+const ejemplo2 = `<p>Ejemplo2</p>
+  <pre>
+    {{ ejemplo2 }}
+  </pre>
+
+  <ul>
+    <template v-for="fruta in arrayFrutas" :key="fruta.name">
+      <li v-if="fruta.stock > 0">
+        Nombre: {{ fruta.name }}, Precio: {{ fruta.price }}
+      </li>
+    </template>
+  </ul>`
 </script>
 
 <template>
-    <header>
-        <img alt="Vue logo" class="logo" src="../assets/logo.svg" width="125" height="125" />
-
-    </header>
-
-
-
-
-
-    <!-- v-for v-if -->
-    <!-- Cuando existen en el mismo nodo, v-if tiene una prioridad más alta que v-for.
-  Eso significa que la condición v-if no tendrá acceso a las variables del alcance de v-for: -->
-
     <h1>Hola {{ name }}!</h1>
+
+    <p>Ejemplo1</p>
+    <pre>
+    {{ ejemplo1 }}
+  </pre>
     <ul>
-        <li v-for="fruta in arrayFrutas" :key="fruta.name" v-if="fruta.stock > 0">
-            {{ fruta }}
-        </li>
+        <template v-for="fruta in arrayFrutas" :key="fruta.name">
+            <li v-if="fruta.stock > 0">
+                {{ fruta }}
+            </li>
+        </template>
     </ul>
 
-    <!-- SOLUCION -->
-    <!-- <ul>
-        <li v-for="fruta in arrayFrutas3" :key="fruta.name" v-if="fruta.stock > 0">
-            {{ fruta }}
-        </li>
-    </ul> -->
+    <!-- Agrega un espacio o línea aquí -->
+
+    <p>Ejemplo2</p>
+    <pre>
+    {{ ejemplo2 }}
+  </pre>
+
+    <ul>
+        <template v-for="fruta in arrayFrutas" :key="fruta.name">
+            <li v-if="fruta.stock > 0">
+                Nombre: {{ fruta.name }}, Precio: {{ fruta.price }}
+            </li>
+        </template>
+    </ul>
 </template>
-
-
-<style scoped></style>
