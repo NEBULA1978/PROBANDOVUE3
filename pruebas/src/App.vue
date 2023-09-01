@@ -26,31 +26,30 @@
   <!-- Example 5 -->
   <EjemploCinco />
 
-  
-  
-  <div>
-    <!-- Imported Components -->
-    <Objetos />
-    <VforVif />
-    
-    
-    <Von />
-    <Vonparametros />
-    <Reactivas />
-    <br>
-    <h2>Tiene reactividad con ref</h2>
-    <ReactivasRef />
-    <br>
-    <h2>Practica botones</h2>
-    <Practica />
-    <h2>Practica Computed</h2>
-    <Computed />
-    
-    <h2>Practica botones 3</h2>
-    <Practica2 />
-    <h2>Practica botones con css bootstrap</h2>
-    <Bootstrap />
-  </div>
+
+
+
+  <!-- Imported Components -->
+  <Objetos />
+  <VforVif />
+
+
+  <Von />
+  <Vonparametros />
+  <Reactivas />
+  <br>
+  <h2>Tiene reactividad con ref</h2>
+  <ReactivasRef />
+  <br>
+  <h2>Practica botones</h2>
+  <Practica />
+  <h2>Practica Computed</h2>
+  <Computed />
+
+  <h2>Practica botones 3</h2>
+  <Practica2 />
+  <h2>Practica botones con css bootstrap</h2>
+  <Bootstrap />
 </template>
 
 <script setup>

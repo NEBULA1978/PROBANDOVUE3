@@ -4,7 +4,6 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-
   font-weight: normal;
 }
 
@@ -15,12 +14,14 @@ a,
   transition: 0.4s;
 }
 
+/* Hover effect for links on devices with hover capability */
 @media (hover: hover) {
   a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
+    background-color: hsla(160, 61%, 32%, 0.2);
   }
 }
 
+/* Responsive layout for larger screens (min-width: 1024px) */
 @media (min-width: 1024px) {
   body {
     display: flex;
@@ -32,4 +33,6 @@ a,
     grid-template-columns: 1fr 1fr;
     padding: 0 2rem;
   }
+
+  /* Add additional styles for larger screens here */
 }
